@@ -6,7 +6,7 @@ My personal portfolio website showcasing my software engineering experience, pro
 
 I'm a Computer Science student at Rutgers University interested in software engineering, backend and frontend development, and product development.
 
-## 🛠️ Built With
+## Built With
 
 - HTML
 - CSS
@@ -30,7 +30,4 @@ View my portfolio here:
 
 SorayaM0.github.io/portfolio/
 
-## Connect
 
-- GitHub: @SorayaM0
-- LinkedIn: sorayamosavi
