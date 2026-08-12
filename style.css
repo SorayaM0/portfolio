@@ -26,6 +26,7 @@ body {
 
 .navbar {
     width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +38,7 @@ body {
     z-index: 1000;
 
     background: rgba(253, 236, 239, 0.93);
+
     backdrop-filter: blur(12px);
 
     border-bottom: 1px solid rgba(217, 139, 166, 0.15);
@@ -46,11 +48,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 30px;
 }
 
 .nav-links a {
     color: #2F2A2C;
+
     text-decoration: none;
 
     font-size: 0.95rem;
@@ -65,6 +69,7 @@ body {
 
 .resume-btn {
     background: #D98BA6;
+
     color: white !important;
 
     padding: 10px 18px;
@@ -83,6 +88,7 @@ body {
 
 .hero {
     min-height: 88vh;
+
     max-width: 900px;
 
     margin: 0 auto;
@@ -115,25 +121,12 @@ body {
 
     box-shadow:
         0 20px 55px rgba(168, 93, 122, 0.22);
-}
-.hero-image img {
-    width: 290px;
-    height: 290px;
-
-    object-fit: cover;
-    object-position: center;
-
-    border-radius: 50%;
-
-    border: 7px solid #FFF9FB;
-
-    box-shadow:
-        0 20px 55px rgba(168, 93, 122, 0.22);
 
     animation: floatPhoto 4s ease-in-out infinite;
 }
 
 @keyframes floatPhoto {
+
     0% {
         transform: translateY(0);
     }
@@ -164,6 +157,7 @@ body {
 
 .hero h1 {
     font-size: 4rem;
+
     line-height: 1.1;
 
     margin-bottom: 18px;
@@ -173,6 +167,7 @@ body {
     color: #A85D7A;
 
     font-size: 1.15rem;
+
     line-height: 1.6;
 
     margin-bottom: 20px;
@@ -186,6 +181,7 @@ body {
     margin: 0 auto 30px;
 
     font-size: 1.05rem;
+
     line-height: 1.8;
 }
 
@@ -196,6 +192,7 @@ body {
 
 .hero-buttons {
     display: flex;
+
     justify-content: center;
 
     gap: 14px;
@@ -211,6 +208,7 @@ body {
 
 .primary-btn {
     background: #D98BA6;
+
     color: white;
 
     padding: 13px 26px;
@@ -249,6 +247,7 @@ body {
     margin-top: 22px;
 
     display: flex;
+
     justify-content: center;
 
     gap: 10px;
@@ -337,6 +336,7 @@ section h2 {
 
 .currently-items {
     display: flex;
+
     flex-wrap: wrap;
 
     gap: 12px;
@@ -346,6 +346,7 @@ section h2 {
 
 .currently-items span {
     background: #FDECEF;
+
     color: #7F425E;
 
     padding: 10px 16px;
@@ -362,6 +363,7 @@ section h2 {
 
 .skills {
     display: flex;
+
     flex-wrap: wrap;
 
     gap: 12px;
@@ -371,6 +373,7 @@ section h2 {
 
 .skills span {
     background: #FFF9FB;
+
     color: #A85D7A;
 
     padding: 10px 18px;
@@ -386,6 +389,7 @@ section h2 {
 
 .skills span:hover {
     background: #D98BA6;
+
     color: white;
 
     transform: translateY(-3px);
@@ -469,6 +473,7 @@ section h2 {
 
 .experience-header {
     display: flex;
+
     justify-content: space-between;
 
     gap: 20px;
@@ -508,9 +513,9 @@ section h2 {
 .project-grid {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-    gap: 24px;
+    gap: 26px;
 
     margin-top: 25px;
 }
@@ -528,6 +533,10 @@ section h2 {
         0 12px 30px rgba(168, 93, 122, 0.08);
 
     transition: 0.3s ease;
+
+    display: flex;
+
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -553,9 +562,11 @@ section h2 {
         );
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
+
     align-items: center;
 
     color: #A85D7A;
@@ -575,6 +586,12 @@ section h2 {
 
 .project-content {
     padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-grow: 1;
 }
 
 .project-card h3 {
@@ -600,6 +617,8 @@ section h2 {
 
 .project-status {
     display: inline-block;
+
+    align-self: flex-start;
 
     padding: 6px 10px;
 
@@ -639,7 +658,9 @@ section h2 {
 
     gap: 10px;
 
-    margin-top: 22px;
+    margin-top: auto;
+
+    padding-top: 22px;
 }
 
 .small-btn,
@@ -660,10 +681,18 @@ section h2 {
     color: white;
 }
 
+.small-btn:hover {
+    background: #A85D7A;
+}
+
 .small-btn-outline {
     border: 1px solid #D98BA6;
 
     color: #A85D7A;
+}
+
+.small-btn-outline:hover {
+    background: #FDECEF;
 }
 
 .disabled {
@@ -685,7 +714,9 @@ section h2 {
     height: 190px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     gap: 12px;
@@ -703,13 +734,15 @@ section h2 {
 }
 
 .cafe-project .project-gallery img {
-    width: 110px;
-    height: 75px;
+    width: 150px;
+
+    height: 100px;
 
     object-fit: cover;
+
     object-position: top;
 
-    border-radius: 8px;
+    border-radius: 9px;
 
     border: 1px solid #F3C8D6;
 
@@ -720,6 +753,57 @@ section h2 {
 
 .cafe-project .project-gallery img:hover {
     transform: scale(1.04);
+}
+
+
+/* =========================
+   STUDENT GRADE TRACKER
+========================= */
+
+.grade-tracker-project .project-screenshot {
+    height: 190px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 16px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F8DDE7,
+            #FDECEF
+        );
+}
+
+.grade-tracker-project .project-screenshot img {
+    width: 100%;
+
+    max-width: 300px;
+
+    height: 155px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #F3C8D6;
+
+    box-shadow:
+        0 8px 20px rgba(168, 93, 122, 0.10);
+
+    transition: 0.25s ease;
+}
+
+.grade-tracker-project .project-screenshot img:hover {
+    transform: scale(1.03);
 }
 
 
@@ -773,6 +857,7 @@ section h2 {
 
 .contact-form {
     display: flex;
+
     flex-direction: column;
 
     gap: 20px;
@@ -780,6 +865,7 @@ section h2 {
 
 .form-group {
     display: flex;
+
     flex-direction: column;
 
     gap: 7px;
@@ -799,6 +885,7 @@ section h2 {
     padding: 15px 17px;
 
     font-family: inherit;
+
     font-size: 1rem;
 
     color: #2F2A2C;
@@ -847,6 +934,7 @@ section h2 {
     border-radius: 25px;
 
     font-size: 1rem;
+
     font-weight: 700;
 
     cursor: pointer;
@@ -894,6 +982,7 @@ section h2 {
 
 .social-links {
     display: flex;
+
     justify-content: center;
 
     gap: 25px;
@@ -907,6 +996,10 @@ section h2 {
     text-decoration: none;
 
     font-weight: 600;
+}
+
+.social-links a:hover {
+    color: #7F425E;
 }
 
 
@@ -936,17 +1029,42 @@ footer {
 
 
 /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cafe-project .project-gallery img {
+        width: 125px;
+        height: 85px;
+    }
+}
+
+
+/* =========================
    MOBILE
 ========================= */
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 18px 15px;
+    }
 
     .nav-links {
-        gap: 14px;
+        gap: 12px;
 
         flex-wrap: wrap;
 
         justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
     }
 
     .hero {
@@ -957,6 +1075,7 @@ footer {
 
     .hero-image img {
         width: 230px;
+
         height: 230px;
     }
 
@@ -972,6 +1091,12 @@ footer {
         flex-wrap: wrap;
 
         justify-content: center;
+    }
+
+    main {
+        padding-left: 20px;
+
+        padding-right: 20px;
     }
 
     .currently-items {
@@ -990,16 +1115,23 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .cafe-project .project-gallery img {
+        width: 110px;
+
+        height: 75px;
+    }
+
+    .grade-tracker-project .project-screenshot img {
+        max-width: 260px;
+
+        height: 145px;
+    }
+
     .contact-container {
         padding: 25px;
     }
 
     .social-links {
         flex-wrap: wrap;
-    }
-
-    .cafe-project .project-gallery img {
-        width: 95px;
-        height: 65px;
     }
 }
