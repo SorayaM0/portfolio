@@ -1,8 +1,8 @@
-# 🌷 Soraya Mosavi — Portfolio
+# Soraya Mosavi — Portfolio
 
 My personal portfolio website showcasing my software engineering experience, projects, technical skills, and interests.
 
-## 💻 About
+## About
 
 I'm a Computer Science student at Rutgers University interested in software engineering, backend and frontend development, and product development.
 
@@ -28,9 +28,9 @@ Java desktop application for managing cafe menu items, customer orders, pricing,
 
 View my portfolio here: 
 
-https://sorayam0.github.io/portfolio/
+SorayaM0.github.io/portfolio/
 
-## 📫 Connect
+## Connect
 
 - GitHub: @SorayaM0
 - LinkedIn: sorayamosavi
