@@ -1,33 +1,33 @@
-# Soraya Mosavi — Portfolio
+# Soraya Mosavi — Portfolio 
 
-My personal portfolio website showcasing my software engineering experience, projects, technical skills, and interests.
+Personal portfolio showcasing my software engineering projects, experience, and technical skills.
 
-## About
+### About Me
 
-I'm a Computer Science student at Rutgers University interested in software engineering, backend and frontend development, and product development.
+Computer Science student at Rutgers University interested in **software engineering, full-stack development, and product development**.
 
-## Built With
+I enjoy building thoughtful, user-focused software and turning ideas into useful products.
 
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages
+### Tech
 
-## Featured Projects
+`Java` · `Spring Boot` · `React` · `TypeScript` · `C#` · `.NET` · `Python` · `SQL` · `PostgreSQL` · `Git`
 
-### Portfolio Tracker API
-Backend application for managing investment portfolios, users, authentication, and portfolio data.
+### Featured Project
 
-### Student Management System
-Python application for managing student records, GPA calculations, and academic information.
+**CareerPilot — AI-Powered Job Application Tracker**
 
-### Cafe Management System
-Java desktop application for managing cafe menu items, customer orders, pricing, and cafe operations.
+Full-stack application for tracking job applications, analyzing job descriptions with AI, and visualizing job-search activity.
 
-## Live Portfolio
+**React · TypeScript · Spring Boot · PostgreSQL · OpenAI**
 
-View my portfolio here: 
+### Links
 
-SorayaM0.github.io/portfolio/
+🌐 [Portfolio](https://sorayam0.github.io/portfolio/)  
+💼 [LinkedIn](https://www.linkedin.com/in/sorayamosavi)  
+💻 [GitHub](https://github.com/SorayaM0)
 
+---
 
+<p align="center">
+  <sub>Designed & built by Soraya Mosavi 🌷</sub>
+</p>
