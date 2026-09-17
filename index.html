@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="Soraya Mosavi — Computer Science student at Rutgers University interested in software engineering, frontend, backend, and product development.">
+    <meta
+        name="description"
+        content="Soraya Mosavi — Computer Science student at Rutgers University interested in software engineering, frontend, backend, and product development."
+    >
 
     <title>Soraya Mosavi | Software Engineering Portfolio</title>
 
-    <link rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>.</text></svg>">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,147 +27,220 @@
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
 
-    <nav class="navbar">
+<!-- =========================================
+     SIDEBAR
+========================================= -->
 
-        <div class="nav-links">
+<aside class="sidebar">
 
-            <a href="#about">About</a>
+    <a
+        href="#home"
+        class="sidebar-logo"
+        data-page="home"
+    >
+        <span>SM</span>
+        <small>soraya</small>
+    </a>
 
-            <a href="#skills">Skills</a>
 
-            <a href="#experience">Experience</a>
+    <nav class="sidebar-nav">
 
-            <a href="#projects">Projects</a>
+        <a
+            href="#home"
+            data-page="home"
+            class="active"
+            aria-label="Home"
+        >
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
 
-            <a href="#contact">Contact</a>
 
-            <a href="assets/resume.pdf"
-               target="_blank"
-               class="resume-btn">
-                Resume
-            </a>
+        <a
+            href="#about"
+            data-page="about"
+            aria-label="About"
+        >
+            <i class="fa-solid fa-user"></i>
+            <span>About</span>
+        </a>
 
-        </div>
+
+        <a
+            href="#experience"
+            data-page="experience"
+            aria-label="Experience"
+        >
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Experience</span>
+        </a>
+
+
+        <a
+            href="#projects"
+            data-page="projects"
+            aria-label="Projects"
+        >
+            <i class="fa-solid fa-code"></i>
+            <span>Projects</span>
+        </a>
+
+
+        <a
+            href="#contact"
+            data-page="contact"
+            aria-label="Contact"
+        >
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+        </a>
 
     </nav>
 
 
+    <div class="sidebar-socials">
 
-    <!-- =========================
-         HERO
-    ========================== -->
+        <a
+            href="https://www.linkedin.com/in/sorayamosavi"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+        >
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
 
-    <header class="hero">
 
-        <div class="hero-image">
+        <a
+            href="https://github.com/SorayaM0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+        >
+            <i class="fa-brands fa-github"></i>
+        </a>
 
-            <img src="assets/soraya.jpg"
-                 alt="Portrait of Soraya Mosavi">
+    </div>
+
+</aside>
+
+
+
+<!-- =========================================
+     HOME
+========================================= -->
+
+<header
+    id="home"
+    class="page hero active-page"
+>
+
+    <div class="hero-text">
+
+        <p class="hero-hi">
+            hi,
+        </p>
+
+
+        <h1>
+            i'm soraya
+        </h1>
+
+
+        <h2>
+            cs + software<br>
+            engineering.
+        </h2>
+
+
+        <p class="hero-description">
+            rutgers university / building thoughtful software /
+            frontend + backend + product
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#contact"
+                class="outline-btn page-link"
+                data-page="contact"
+            >
+                contact me
+            </a>
 
         </div>
 
-
-        <div class="hero-text">
-
-            <p class="hello">
-                PORTFOLIO · 2026
-            </p>
-
-            <h1>Soraya Mosavi</h1>
-
-            <h2>
-                Software engineer building thoughtful, human-centered products.
-            </h2>
-
-            <p class="hero-description">
-
-                Computer Science student at Rutgers University combining strong engineering with product thinking to build useful, intuitive software experiences.
-
-            </p>
+    </div>
 
 
-            <div class="hero-buttons">
 
-                <a href="#projects"
-                   class="primary-btn">
-                    View My Work
-                </a>
+    <!-- Decorative coding graphic -->
 
-                <a href="assets/resume.pdf"
-                   target="_blank"
-                   class="secondary-btn">
-                    View Resume
-                </a>
+    <div class="hero-graphic">
 
-            </div>
+        <div class="orbit orbit-one"></div>
+
+        <div class="orbit orbit-two"></div>
+
+        <div class="orbit orbit-three"></div>
 
 
-            <div class="hero-socials">
-
-                <a href="https://github.com/SorayaM0"
-                   target="_blank">
-                    GitHub
-                </a>
-
-                <span>•</span>
-
-                <a href="https://www.linkedin.com/in/sorayamosavi"
-                   target="_blank">
-                    LinkedIn
-                </a>
-
-            </div>
-
+        <div class="code-circle">
+            &lt;/&gt;
         </div>
 
-    </header>
+    </div>
+
+</header>
 
 
 
-    <main>
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section
+    id="about"
+    class="page page-section about-section"
+>
 
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
+    <div class="about-content">
 
-        <section id="about">
+        <p class="section-label">
+            GET TO KNOW ME
+        </p>
 
-            <p class="section-label">
-                GET TO KNOW ME
-            </p>
 
-            <h2>About Me </h2>
+        <h2>
+            about me.
+        </h2>
 
-            <p>
-                I'm a Computer Science student at Rutgers University
-                interested in software engineering and product development.
-                I enjoy working across backend and frontend technologies,
-                solving problems, and turning ideas into useful applications.
-            </p>
 
-            <p>
-                I'm also interested in product management and understanding
-                how engineering decisions, user needs, and product strategy
-                come together to create meaningful software experiences.
-            </p>
+        <p>
+            I'm a Computer Science student at Rutgers University
+            interested in software engineering and product development.
+            I enjoy working across backend and frontend technologies,
+            solving problems, and turning ideas into useful applications.
+        </p>
 
-        </section>
-  <!-- =========================
-             SKILLS
-        ========================== -->
 
-        <section id="skills">
+        <p>
+            I'm also interested in product management and understanding
+            how engineering decisions, user needs, and product strategy
+            come together to create meaningful software experiences.
+        </p>
 
-            <p class="section-label">
-                TECHNOLOGIES
-            </p>
 
-            <h2>Tech Stack</h2>
+
+        <!-- SKILLS -->
+
+        <div class="skills-section">
+
+            <h3>
+                tech i work with.
+            </h3>
 
 
             <div class="skills">
@@ -188,578 +267,919 @@
 
             </div>
 
-        </section>
-
-
-
-        <!-- =========================
-             EXPERIENCE
-        ========================== -->
-
-        <section id="experience">
-
-            <p class="section-label">
-                MY JOURNEY
-            </p>
-
-            <h2>Experience</h2>
-
-
-            <div class="timeline">
-
-
-                <!-- SOFTWARE ENGINEERING INTERN -->
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Student Software Developer
-                                </h3>
-
-                                <h4>
-                                    RutgersIPO
-                                </h4>
-
-                            </div>
-
-
-                            <span>
-                                Jul 2025 – Present
-                            </span>
-
-                        </div>
-
-
-                        <ul>
-
-                            <li>
-                                Developed & modernized Rutgers applications: Contributed to the Fire Inspection application and other internal systems using C#, .NET, ASP.NET MVC, Razor, JavaScript, SQL Server, and Oracle, working across UI, controllers, business logic, configuration, and database workflows.
-                            </li>
-
-                            <li>
-                                Improved notification reliability by 50% :Enhanced a C#/.NET Worker Service by implementing configurable SMTP recipient batching, structured logging, exception handling, and strongly typed configuration; stress-tested notification processing with 200+ recipients.
-                            </li>
-
-                            <li>
-                                Reduced UI complexity by 20% :Modernized ASP.NET MVC interfaces by restructuring forms, navigation, validation feedback, input states, and responsive layouts while preserving existing application behavior and backend integrations.
-                            </li>
-
-                            <li>
-                                Debugged across multiple environments :Used SQL Server/SSMS and Oracle SQL Developer to create test data, validate processing results, execute SQL queries, and diagnose configuration and runtime issues across local and test-server environments.
-                            </li>
-                            
-                            
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- IT SUPPORT INTERN -->
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    IT Support Intern
-                                </h3>
-
-                                <h4>
-                                    RutgersIPO
-                                </h4>
-
-                            </div>
-
-
-                            <span>
-                                Jun 2025 – Jul 2025
-                            </span>
-
-                        </div>
-
-
-                        <ul>
-
-                            <li>
-                                Reduced average issue resolution time by 20% by diagnosing hardware, 
-                                software, network, authentication, and Windows workstation
-                                 issues and identifying root causes for recurring technical problems.
-                            </li>
-
-                            <li>
-                                Maintained a 95% successful support resolution rate by troubleshooting account access, connectivity, university applications, peripherals, and system configuration issues while escalating complex incidents when necessary.
-                            </li>
-
-                            <li>
-                                Accelerated workstation setup and deployment by 30% by configuring Windows devices, installing required software, applying system updates, and preparing hardware for faculty and staff.
-                            </li>
-                           
-                            
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- COURSE GRADER -->
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Course Grader — Introduction to Computer Science
-                                </h3>
-
-                                <h4>
-                                    Rutgers University • Department of Computer Science
-                                </h4>
-
-                            </div>
-
-
-                            <span>
-                                Jan 2025 – May 2025
-                            </span>
-
-                        </div>
-
-
-                        <ul>
-
-                            <li>
-                                Maintained 95%+ grading accuracy and consistency by evaluating programming assignments, homework, and exams against established grading criteria and course requirements.
-                            </li>
-
-                            <li>
-                                Reduced grading turnaround time by 20% by systematically reviewing student code for correctness, programming concepts, and problem-solving approaches.
-                            </li>
-
-                            <li>
-                                Improved grading consistency by 25% by collaborating with professors to align assessment standards, resolve ambiguous submissions, and ensure grading criteria were applied uniformly.
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-       <!-- =========================
-     PROJECTS
-========================== -->
-
-<section id="projects">
-
-    <p class="section-label">
-        WHAT I'M BUILDING
-    </p>
-
-    <h2>Featured Projects</h2>
-
-
-    <div class="project-grid">
-
-
-        <!-- =========================
-     CAREERPILOT
-========================== -->
-
-<article class="project-card careerpilot-project">
-
-    <!-- LEFT SIDE: SCREENSHOTS -->
-    <div class="project-gallery">
-
-        <!-- Main dashboard screenshot -->
-        <img
-            src="assets/careerpilot-dashboard.png"
-            alt="CareerPilot Dashboard"
-            class="career-main"
-        >
-    
-        <!-- Small screenshots -->
-        <div class="project-thumbnails">
-    
-            <img
-                src="assets/careerpilot-login.png"
-                alt="CareerPilot Login"
-            >
-    
-            <img
-                src="assets/careerpilot-add-application.png"
-                alt="CareerPilot Add Application"
-            >
-    
-            <img
-                src="assets/careerpilot-ai.png"
-                alt="CareerPilot AI Assistant"
-            >
-    
-            <img
-                src="assets/careerpilot-analytics.png"
-                alt="CareerPilot Analytics"
-            >
-    
         </div>
-    
+
     </div>
 
 
-    <!-- RIGHT SIDE: PROJECT INFO -->
-    <div class="project-content careerpilot-content">
 
-        <div>
+    <div class="about-photo">
 
-            <span class="project-status completed">
-                COMPLETED
+        <img
+            src="assets/soraya.jpg"
+            alt="Portrait of Soraya Mosavi"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     EXPERIENCE
+========================================= -->
+
+<section
+    id="experience"
+    class="page page-section experience-section"
+>
+
+    <div class="section-wrapper">
+
+        <p class="section-label">
+            MY JOURNEY
+        </p>
+
+
+        <h2>
+            experience.
+        </h2>
+
+
+
+        <div class="timeline">
+
+
+            <!-- SOFTWARE DEVELOPER -->
+
+            <article class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3>
+                                Student Software Developer
+                            </h3>
+
+                            <h4>
+                                RutgersIPO
+                            </h4>
+
+                        </div>
+
+
+                        <span>
+                            Jul 2025 – Present
+                        </span>
+
+                    </div>
+
+
+
+                    <ul>
+
+                        <li>
+                            Developed and modernized Rutgers applications,
+                            contributing to the Fire Inspection application
+                            and other internal systems using C#, .NET,
+                            ASP.NET MVC, Razor, JavaScript, SQL Server,
+                            and Oracle.
+                        </li>
+
+
+                        <li>
+                            Enhanced a C#/.NET Worker Service by implementing
+                            configurable SMTP recipient batching, structured
+                            logging, exception handling, and strongly typed
+                            configuration.
+                        </li>
+
+
+                        <li>
+                            Modernized ASP.NET MVC interfaces by restructuring
+                            forms, navigation, validation feedback, input
+                            states, and responsive layouts.
+                        </li>
+
+
+                        <li>
+                            Used SQL Server and Oracle SQL Developer to
+                            create test data, validate processing results,
+                            execute queries, and diagnose configuration
+                            and runtime issues.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+         <!-- HACK4IMPACT -->
+
+<article class="timeline-item">
+
+    <div class="timeline-dot"></div>
+
+    <div class="experience-card">
+
+        <div class="experience-header">
+
+            <div>
+
+                <h3>
+                    Frontend Developer
+                </h3>
+
+                <h4>
+                    Hack4Impact — Rutgers Chapter
+                </h4>
+
+            </div>
+
+            <span>
+                Sep 2026 – Present
             </span>
 
-            <h3>
-                CareerPilot — AI-Powered Job Application Tracker
-            </h3>
+        </div>
 
-            <p class="project-description">
-                Full-stack job application management platform for organizing
-                opportunities, tracking progress through the hiring pipeline,
-                analyzing job descriptions with AI, and visualizing job-search
-                activity through analytics.
-            </p>
-            
-            <ul class="project-impact">
-                <li>
-                    <strong>100% automated application tracking</strong>
-                    through a full-stack React + Spring Boot architecture with
-                    centralized pipeline management and PostgreSQL persistence.
-                </li>
-            
-                <li>
-                    <strong>50% less manual job-description analysis</strong>
-                    through OpenAI-powered insights that help streamline
-                    application decisions.
-                </li>
-            
-                <li>
-                    <strong>Secure user-specific data</strong>
-                    with JWT authentication, authorization, and protected
-                    REST API endpoints.
-                </li>
-            </ul>
 
-            <p class="project-tech">
-                React • TypeScript • Spring Boot • Java • PostgreSQL •
-                OpenAI • JWT • Docker
-            </p>
+        <ul>
 
-            <div class="project-buttons">
+            <li>
+                Develop frontend features for a software application
+                built in partnership with a nonprofit organization.
+            </li>
+
+            <li>
+                Collaborate with a student engineering team to build
+                technology that supports the nonprofit's needs and
+                social-impact mission.
+            </li>
+
+            <li>
+                Contribute to the design and implementation of
+                user-facing interfaces as part of Hack4Impact's
+                Rutgers development team.
+            </li>
+
+        </ul>
+
+    </div>
+
+</article>
+
+            <!-- IT SUPPORT -->
+
+            <article class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3>
+                                IT Support Intern
+                            </h3>
+
+                            <h4>
+                                RutgersIPO
+                            </h4>
+
+                        </div>
+
+
+                        <span>
+                            Jun 2025 – Jul 2025
+                        </span>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Diagnosed hardware, software, network,
+                            authentication, and Windows workstation issues
+                            and identified root causes for recurring
+                            technical problems.
+                        </li>
+
+
+                        <li>
+                            Troubleshot account access, connectivity,
+                            university applications, peripherals, and
+                            system configuration issues.
+                        </li>
+
+
+                        <li>
+                            Configured Windows devices, installed required
+                            software, applied system updates, and prepared
+                            hardware for faculty and staff.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- COURSE GRADER -->
+
+            <article class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3>
+                                Course Grader — Introduction to Computer Science
+                            </h3>
+
+                            <h4>
+                                Rutgers University • Department of Computer Science
+                            </h4>
+
+                        </div>
+
+
+                        <span>
+                            Jan 2025 – May 2025
+                        </span>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Evaluated programming assignments, homework,
+                            and exams against established grading criteria
+                            and course requirements.
+                        </li>
+
+
+                        <li>
+                            Reviewed student code for correctness,
+                            programming concepts, and problem-solving
+                            approaches.
+                        </li>
+
+
+                        <li>
+                            Collaborated with professors to align assessment
+                            standards and ensure grading criteria were
+                            applied consistently.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PROJECTS
+========================================= -->
+
+<section
+    id="projects"
+    class="page page-section projects-section"
+>
+
+    <div class="section-wrapper">
+
+        <p class="section-label">
+            WHAT I'M BUILDING
+        </p>
+
+
+        <h2>
+            projects.
+        </h2>
+
+
+
+        <!-- =====================================
+             CAREERPILOT
+        ====================================== -->
+
+        <article class="project-row">
+
+
+            <div class="project-info">
+
+                <span class="project-status">
+                    COMPLETED
+                </span>
+
+
+                <h3>
+                    CareerPilot — AI-Powered
+                    Job Application Tracker
+                </h3>
+
+
+                <p class="project-description">
+
+                    Full-stack job application management platform for
+                    organizing opportunities, tracking progress through
+                    the hiring pipeline, analyzing job descriptions with
+                    AI, and visualizing job-search activity through
+                    analytics.
+
+                </p>
+
+
+                <ul class="project-points">
+
+                    <li>
+                        Full-stack React + Spring Boot architecture
+                        with PostgreSQL persistence.
+                    </li>
+
+                    <li>
+                        OpenAI-powered job description analysis.
+                    </li>
+
+                    <li>
+                        JWT authentication, authorization, and
+                        protected REST API endpoints.
+                    </li>
+
+                </ul>
+
+
+                <p class="project-tech">
+
+                    React • TypeScript • Spring Boot • Java •
+                    PostgreSQL • OpenAI • JWT • Docker
+
+                </p>
+
 
                 <a
                     href="https://github.com/SorayaM0/career-pilot"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="small-btn"
+                    class="project-btn"
                 >
-                    View on GitHub
+                    view project
                 </a>
 
             </div>
 
-        </div>
-
-    </div>
-
-</article>
 
 
+            <div class="career-gallery">
 
-        <!-- =========================
+
+                <img
+                    src="assets/careerpilot-dashboard.png"
+                    alt="CareerPilot Dashboard"
+                    class="career-main"
+                >
+
+
+                <div class="career-thumbnails">
+
+
+                    <img
+                        src="assets/careerpilot-login.png"
+                        alt="CareerPilot Login"
+                    >
+
+
+                    <img
+                        src="assets/careerpilot-add-application.png"
+                        alt="CareerPilot Add Application"
+                    >
+
+
+                    <img
+                        src="assets/careerpilot-ai.png"
+                        alt="CareerPilot AI Assistant"
+                    >
+
+
+                    <img
+                        src="assets/careerpilot-analytics.png"
+                        alt="CareerPilot Analytics"
+                    >
+
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =====================================
              CAFE MANAGEMENT SYSTEM
-        ========================== -->
+        ====================================== -->
 
-      <!-- =========================
-     CAFE MANAGEMENT SYSTEM
-========================== -->
-
-<article class="project-card cafe-project">
-
-    <div class="project-gallery cafe-gallery">
-
-        <img
-            src="assets/dashboard.png"
-            alt="Cafe Management System dashboard"
-            class="cafe-main"
-        >
-
-        <img
-            src="assets/donut.png"
-            alt="Cafe Management System ordering screen"
-            class="cafe-secondary"
-        >
-
-    </div>
+        <article class="project-row">
 
 
-    <div class="project-content">
+            <div class="project-info">
 
-        <div>
+                <span class="project-status">
+                    COMPLETED
+                </span>
 
-            <span class="project-status completed">
-                COMPLETED
-            </span>
 
-            <h3>
-                Cafe Management System
-            </h3>
+                <h3>
+                    Cafe Management System
+                </h3>
 
-            <p class="project-description">
-                Desktop application for managing cafe menu items,
-                customer orders, pricing, and cafe operations through
-                an interactive graphical interface.
-            </p>
 
-            <ul class="project-impact">
-                <li>
-                    <strong>Streamlined order management</strong>
-                    through an interactive JavaFX interface.
-                </li>
+                <p class="project-description">
 
-                <li>
-                    <strong>Automated pricing and order calculations</strong>
-                    to reduce manual processing.
-                </li>
+                    Desktop application for managing cafe menu items,
+                    customer orders, pricing, and cafe operations through
+                    an interactive graphical interface.
 
-                <li>
-                    <strong>Persistent application data</strong>
-                    using SQLite for menu and order management.
-                </li>
-            </ul>
+                </p>
 
-            <p class="project-tech">
-                Java • JavaFX • SQLite
-            </p>
 
-            <div class="project-buttons">
+                <ul class="project-points">
+
+                    <li>
+                        Interactive JavaFX order management interface.
+                    </li>
+
+                    <li>
+                        Automated pricing and order calculations.
+                    </li>
+
+                    <li>
+                        SQLite persistence for menu and order data.
+                    </li>
+
+                </ul>
+
+
+                <p class="project-tech">
+                    Java • JavaFX • SQLite
+                </p>
+
 
                 <a
                     href="https://github.com/SorayaM0/ru-cafe-ordering-system"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="small-btn"
+                    class="project-btn"
                 >
-                    View on GitHub
+                    view project
                 </a>
 
             </div>
 
-        </div>
-
-    </div>
-
-</article>
 
 
-     <!-- =========================
-     STUDENT GRADE TRACKER
-========================== -->
-
-<article class="project-card grade-tracker-project">
-
-    <!-- LEFT SIDE: SCREENSHOT -->
-    <div class="project-screenshot grade-screenshot">
-
-        <img
-            src="assets/student-grade-tracker.png"
-            alt="Student Grade Tracker JavaFX application"
-        >
-
-    </div>
+            <div class="cafe-gallery">
 
 
-    <!-- RIGHT SIDE: PROJECT INFO -->
-    <div class="project-content">
-
-        <div>
-
-            <span class="project-status completed">
-                COMPLETED
-            </span>
-
-            <h3>
-                Student Grade Tracker
-            </h3>
-
-            <p class="project-description">
-                JavaFX desktop application for managing students and
-                tracking academic performance through an intuitive
-                graphical interface.
-            </p>
+                <img
+                    src="assets/dashboard.png"
+                    alt="Cafe Management System dashboard"
+                >
 
 
-            <ul class="project-impact">
-
-                <li>
-                    <strong>Automated grade calculations</strong>
-                    including student averages and class statistics.
-                </li>
-
-                <li>
-                    <strong>Built-in performance analysis</strong>
-                    identifies top-performing students and academic trends.
-                </li>
-
-                <li>
-                    <strong>Reliable user input</strong>
-                    through validation and object-oriented application design.
-                </li>
-
-            </ul>
+                <img
+                    src="assets/donut.png"
+                    alt="Cafe Management System ordering screen"
+                >
 
 
-            <p class="project-tech">
-                Java • JavaFX • Maven • CSS • OOP
-            </p>
+            </div>
+
+        </article>
 
 
-            <div class="project-buttons">
+
+        <!-- =====================================
+             STUDENT GRADE TRACKER
+        ====================================== -->
+
+        <article class="project-row">
+
+
+            <div class="project-info">
+
+                <span class="project-status">
+                    COMPLETED
+                </span>
+
+
+                <h3>
+                    Student Grade Tracker
+                </h3>
+
+
+                <p class="project-description">
+
+                    JavaFX desktop application for managing students
+                    and tracking academic performance through an
+                    intuitive graphical interface.
+
+                </p>
+
+
+                <ul class="project-points">
+
+                    <li>
+                        Automatic student averages and class statistics.
+                    </li>
+
+                    <li>
+                        Identifies top-performing students.
+                    </li>
+
+                    <li>
+                        Input validation and object-oriented design.
+                    </li>
+
+                </ul>
+
+
+                <p class="project-tech">
+
+                    Java • JavaFX • Maven • CSS • OOP
+
+                </p>
+
 
                 <a
                     href="https://github.com/SorayaM0/student-grade-tracker"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="small-btn"
+                    class="project-btn"
                 >
-                    View on GitHub
+                    view project
                 </a>
 
             </div>
+
+
+
+            <div class="grade-gallery">
+
+                <img
+                    src="assets/student-grade-tracker.png"
+                    alt="Student Grade Tracker application"
+                >
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section
+    id="contact"
+    class="page page-section contact-section"
+>
+
+
+    <div class="contact-intro">
+
+        <p class="section-label">
+            LET'S CONNECT
+        </p>
+
+
+        <h2>
+            contact me.
+        </h2>
+
+
+        <p>
+
+            Have a question, opportunity, or just want to connect?
+            I'd love to hear from you.
+
+        </p>
+
+
+
+        <div class="contact-socials">
+
+
+            <a href="mailto:sorayamosavi36@gmail.com">
+                email
+            </a>
+
+
+            <a
+                href="https://github.com/SorayaM0"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                github
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/sorayamosavi"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                linkedin
+            </a>
+
 
         </div>
 
     </div>
 
-</article>
 
 
-    </div>
+    <div class="contact-form-wrapper">
 
-</section>
-<!-- CONTACT -->
-<section id="contact">
 
-    <div class="contact-heading">
-        <p class="section-label">LET'S CONNECT</p>
-        <h2>Get In Touch</h2>
-        <p>
-            Have a question, opportunity, or just want to connect?
-            I'd love to hear from you.
-        </p>
-    </div>
-
-    <div class="contact-container">
         <form
             id="contact-form"
             class="contact-form"
             action="https://formspree.io/f/xwlebbpy"
             method="POST"
         >
+
+
             <div class="form-group">
-                <label for="name">Name</label>
+
+                <label for="name">
+                    name
+                </label>
+
+
                 <input
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder="Your name"
                     required
                 >
+
             </div>
 
+
+
             <div class="form-group">
-                <label for="email">Email</label>
+
+                <label for="email">
+                    email
+                </label>
+
+
                 <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Your Email"
+                    placeholder="Your email"
                     required
                 >
+
             </div>
 
-            <div class="form-group">
-                <label for="message">Message</label>
+
+
+            <div class="form-group full-width">
+
+                <label for="message">
+                    message
+                </label>
+
+
                 <textarea
                     id="message"
                     name="message"
-                    rows="4"
-                    placeholder="Your Message"
+                    placeholder="Your message"
                     required
                 ></textarea>
+
             </div>
 
-            <button type="submit" class="send-btn">
-                Send Message ✉️
+
+
+            <button
+                type="submit"
+                class="send-btn"
+            >
+                send message
             </button>
+
+
         </form>
-    </div>
 
-    <div class="social-links">
-        <a href="mailto:sorayamosavi36@gmail.com">Email</a>
-
-        <a href="https://github.com/SorayaM0"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/sorayamosavi"
-           target="_blank"
-           rel="noopener noreferrer">
-            LinkedIn
-        </a>
     </div>
 
 </section>
 
-</main>
 
-<footer>
-    <p>Designed &amp; built by Soraya Mosavi</p>
-    <p class="footer-small">© 2026 Soraya Mosavi</p>
-</footer>
 
+<!-- =========================================
+     PAGE NAVIGATION JAVASCRIPT
+========================================= -->
+
+<script>
+
+    const pages =
+        document.querySelectorAll(".page");
+
+
+    const navigationLinks =
+        document.querySelectorAll(
+            "[data-page]"
+        );
+
+
+
+    function showPage(pageName) {
+
+
+        pages.forEach(page => {
+
+            page.classList.remove(
+                "active-page"
+            );
+
+            page.scrollTop = 0;
+
+        });
+
+
+
+        const selectedPage =
+            document.getElementById(
+                pageName
+            );
+
+
+        if (!selectedPage) {
+            return;
+        }
+
+
+        selectedPage.classList.add(
+            "active-page"
+        );
+
+
+
+        document
+            .querySelectorAll(
+                ".sidebar-nav a"
+            )
+            .forEach(link => {
+
+                link.classList.remove(
+                    "active"
+                );
+
+            });
+
+
+
+        const activeNavigation =
+            document.querySelector(
+                `.sidebar-nav a[data-page="${pageName}"]`
+            );
+
+
+        if (activeNavigation) {
+
+            activeNavigation
+                .classList
+                .add("active");
+
+        }
+
+    }
+
+
+
+    navigationLinks.forEach(link => {
+
+
+        link.addEventListener(
+            "click",
+            function(event) {
+
+                event.preventDefault();
+
+
+                const pageName =
+                    this.dataset.page;
+
+
+                showPage(pageName);
+
+
+                history.replaceState(
+                    null,
+                    "",
+                    "#" + pageName
+                );
+
+            }
+        );
+
+    });
+
+
+
+    const contactButton =
+        document.querySelector(
+            ".page-link"
+        );
+
+
+    if (contactButton) {
+
+        contactButton.addEventListener(
+            "click",
+            function(event) {
+
+                event.preventDefault();
+
+                showPage("contact");
+
+                history.replaceState(
+                    null,
+                    "",
+                    "#contact"
+                );
+
+            }
+        );
+
+    }
+
+
+
+    const startingPage =
+        window.location.hash
+            ? window.location.hash.substring(1)
+            : "home";
+
+
+    if (
+        document.getElementById(
+            startingPage
+        )
+    ) {
+
+        showPage(startingPage);
+
+    }
+
+    else {
+
+        showPage("home");
+
+    }
+
+</script>
 
 
 </body>
+
 </html>
