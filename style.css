@@ -1837,3 +1837,24 @@ body {
 .hero.active-page {
     overflow: hidden;
 }
+/* =========================
+   ROUTERU GALLERY
+========================= */
+
+.routeru-gallery {
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    align-items: center;
+}
+
+.routeru-gallery img {
+    width: calc(50% - 7px);
+    height: auto;
+    display: block;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 12px 30px rgba(50, 35, 40, 0.10);
+}
